@@ -20,7 +20,13 @@ const BentoCard = ({
         <div className="mb-4">
           {title && <h3 className={`${titleSize} font-bold`}>{title}</h3>}
           {description && (
-            <p className={`${descriptionSize} font-bold mt-2`}>{description}</p>
+            <div className={`${descriptionSize} font-bold mt-2`}>
+              {typeof description === 'string' ? (
+                <p>{description}</p>
+              ) : (
+                description
+              )}
+            </div>
           )}
           {subtitle && <p className={`${subtitleSize} mt-2`}>{subtitle}</p>}
           {subdescription && (

@@ -7,6 +7,7 @@ import Story from "./components/Story";
 import Vault from "./components/Vault";
 import Cube from "./components/Cube";
 import Nutshel from "./components/Nutshel";
+import News from "./components/News";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -21,6 +22,7 @@ function App() {
       <Vault />
       <Cube />
       <Nutshel />
+      <News />
       <Contact />
       <Footer />
     </main>
